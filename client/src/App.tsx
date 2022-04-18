@@ -1,8 +1,14 @@
 import React from 'react';
+import {TodoInput, TodoList} from "./components";
+import './App.scss';
 
 function App() {
   return (
-    <div>Hello!</div>
+    <div>
+        Hello!
+      <TodoInput handleSubmit={() => {}} />
+      <TodoList />
+    </div>
   );
 }
 
