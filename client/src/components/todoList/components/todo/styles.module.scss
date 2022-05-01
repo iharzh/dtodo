@@ -1,0 +1,14 @@
+.todo {
+  &-wrapper:hover {
+    background-color: #f1f1f1;
+  }
+
+  &-text:hover {
+    cursor: pointer;
+  }
+
+  &-text_completed {
+    text-decoration: line-through;
+    color: #afafaf;
+  }
+}

@@ -1,2 +1,2 @@
 export {TodoList} from './todoList'
-export {TodoInput} from './todoInput';
+export {TodoInput} from './todoList/todoInput';

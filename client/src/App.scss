@@ -1,1 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
+
+html {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+body {
+  background: linear-gradient(135deg, rgba(238,252,255,1) 0%, rgba(235,255,230,1) 100%);
+  min-width: 375px;
+}

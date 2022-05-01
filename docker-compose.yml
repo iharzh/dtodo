@@ -1,0 +1,24 @@
+services:
+  server:
+    build:
+      dockerfile: Dockerfile
+      context: ./server
+    ports:
+      - '5000:5000'
+
+  client:
+    build:
+      dockerfile: Dockerfile
+      context: ./client
+    ports:
+      - '3000:3000'
+
+  db:
+    image: 'postgres'
+    environment:
+      POSTGRES_PASSWORD: 'password'
+      POSTGRES_USER: 'postgres'
+      POSTGRES_DB: 'todos'
+      POSTGRES_PORT: 5432
+    ports:
+      - '5432:5432'
